@@ -15,6 +15,7 @@ output/
 .env
 *.env
 
+# CSV datasets and generated files
 *.csv
 
 # Logs
