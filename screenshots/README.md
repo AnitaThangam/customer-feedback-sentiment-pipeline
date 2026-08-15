@@ -4,7 +4,7 @@ This folder contains screenshots demonstrating the key stages of the Customer Fe
 
 ## Planned Screenshots
 
-- PySpark ETL execution
+- PySpark ETL execution 
 - Cleaned dataset output
 - Snowflake table containing processed records
 - Snowflake SQL analytics results
