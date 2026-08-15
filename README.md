@@ -1,86 +1,111 @@
-# Cloud-Based Customer Feedback Analytics & Sentiment Intelligence Pipeline
+# Cloud-Based Customer Feedback Analytics & Sentiment Intelligence
 
-## Overview
+## 📌 Project Overview
 
-An end-to-end customer feedback analytics pipeline built using Python, PySpark, Snowflake, SQL, and Power BI to transform raw Amazon customer reviews into analytics-ready data.
+This project implements an end-to-end customer feedback analytics pipeline using PySpark, Snowflake, SQL, and Power BI.
 
-## Business Problem
+The objective is to process customer review data, clean and transform the dataset, classify customer sentiment based on ratings, perform analytical queries, and prepare the data for business intelligence reporting.
 
-Customer review data can be difficult to process and analyze at scale. This project builds an automated data pipeline to clean customer review data, perform sentiment classification, store curated data in Snowflake, and generate business insights using SQL and Power BI.
+## 🏗️ Architecture
 
-## Tech Stack
+Customer Reviews CSV
+        ↓
+PySpark ETL
+        ↓
+Data Cleaning & Transformation
+        ↓
+Sentiment Classification
+        ↓
+Clean CSV Dataset
+        ↓
+Snowflake Cloud Data Warehouse
+        ↓
+SQL Analysis
+        ↓
+Power BI Dashboard
+
+## 🛠️ Technologies Used
 
 - Python
 - PySpark
-- Pandas
 - SQL
 - Snowflake
 - Power BI
 - DAX
+- Pandas
+- NumPy
 - Git & GitHub
 
-## Project Pipeline
+## 🔄 ETL Pipeline
 
-Raw Customer Reviews  
-↓  
-PySpark ETL  
-↓  
-Data Cleaning & Transformation  
-↓  
-Duplicate Removal & Missing Value Handling  
-↓  
-Sentiment Classification  
-↓  
-Snowflake Data Warehouse  
-↓  
-SQL Analytics  
-↓  
-Power BI Dashboard
+The PySpark pipeline performs:
 
-## Key Features
+1. Dataset ingestion
+2. Schema inspection
+3. Column selection
+4. Column renaming
+5. Missing-value handling
+6. Duplicate removal
+7. Sentiment classification
+8. Data quality checks
+9. KPI generation
+10. Export of cleaned dataset
 
-- Processed 34,627+ customer reviews
-- Built PySpark ETL transformations
-- Cleaned and standardized customer review data
-- Removed duplicate records
-- Implemented rating-based sentiment classification
-- Loaded curated data into Snowflake
-- Developed SQL analytics and business KPIs
-- Prepared data for Power BI dashboarding
+## 😊 Sentiment Classification
 
-## Sentiment Classification
+Customer sentiment is classified using review ratings:
 
 | Rating | Sentiment |
-|---|---|
+|--------|-----------|
 | 4–5 | Positive |
 | 3 | Neutral |
 | 1–2 | Negative |
 
-## SQL Analytics
+## 📊 Analytics
 
-The project analyzes:
+The project includes SQL analysis for:
+
+- Sentiment distribution
+- Average rating by brand
+- Top brands by review volume
+- Customer feedback analysis
+- Product-level review insights
+
+## ☁️ Cloud Data Warehouse
+
+The cleaned customer review dataset is loaded into Snowflake for scalable cloud-based storage and analytical querying.
+
+Database:
+
+`CUSTOMER_FEEDBACK_DB`
+
+Schema:
+
+`ANALYTICS`
+
+Table:
+
+`CUSTOMER_REVIEWS`
+
+## 📈 Business Intelligence
+
+The processed dataset is prepared for Power BI to build an executive dashboard containing:
 
 - Total Reviews
 - Average Rating
+- Positive / Neutral / Negative Reviews
 - Sentiment Distribution
 - Brand Performance
-- Product Performance
-- Category Trends
-- Monthly Review Trends
-- Highest and Lowest Rated Brands
+- Customer Feedback Trends
 
-## Project Structure
+## 📂 Repository Structure
 
 ```text
-customer-feedback-sentiment-pipeline/
-│
-├── data/
-├── src/
-│   ├── pyspark_ETL.py
-│   └── snowflake_queries.sql
-│
 ├── dashboard/
+├── data/
 ├── screenshots/
+├── .gitignore
 ├── README.md
-├── requirements.txt
-└── .gitignore
+├── SQL ANALYSIS.sql
+├── pyspark_ETL.py
+└── requirements.txt
