@@ -1,17 +1,29 @@
 # Power BI Dashboard
 
-The Power BI dashboard is currently under development.
+This folder contains the Power BI dashboard developed for the Customer Feedback Analytics project.
 
-Planned dashboard components:
+## Dashboard Objectives
 
-- Total Reviews KPI
-- Average Rating KPI
-- Positive / Neutral / Negative Reviews
-- Sentiment Distribution
-- Reviews by Brand
-- Average Rating by Brand
-- Monthly Review Trend
-- Top 10 Products
-- Category-wise Review Analysis
+- Monitor customer sentiment
+- Analyze average product ratings
+- Identify top-performing brands
+- Track negative customer feedback
+- Support data-driven business decisions
 
-The completed Power BI dashboard will be added to this folder after the Power BI phase is finalized.
+## Planned KPIs
+
+- Total Reviews
+- Average Rating
+- Positive Reviews %
+- Neutral Reviews %
+- Negative Reviews %
+- Top Brands
+- Product Performance
+
+## Tools
+
+- Power BI
+- DAX
+- Snowflake
+
+> Dashboard screenshots will be added after the Power BI development phase.
